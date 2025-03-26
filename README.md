@@ -30,7 +30,7 @@ AWSAlertWizard is a serverless pipeline designed to fetch weather data from an o
   - **AWSLambdaBasicExecutionRole** for Lambda logging.
   - **AmazonDynamoDBFullAccess** for database access.
   - **AmazonSESFullAccess** for email notifications.
-- Attach the role to your Lambda function.
+- Attach the role to the Lambda function.
 
 ### 3. Create Lambda Function
 - Navigate to the AWS Lambda Console.
@@ -63,4 +63,4 @@ AWSAlertWizard is a serverless pipeline designed to fetch weather data from an o
 
  **4.Monitor Alerts:**
 
-   Check your verified email for weather alert notifications.
+   Check the verified email for weather alert notifications.

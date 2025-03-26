@@ -15,8 +15,7 @@ AWSAlertWizard is a serverless pipeline designed to fetch weather data from an o
 2. **Python**: Installed on your local machine for packaging the Lambda function.
 3. **Install Required Libraries**:
    - Use `pip install requests -t .` to package the requests library for Lambda.
-4.**IAM Role**: Attach necessary policies (AmazonDynamoDBFullAccess, AmazonSESFullAccess,          
-  AWSLambdaBasicExecutionRole) to the Lambda function's role.
+4. **IAM Role**: Identity and Access Management role is important for granting permission to AWS lambda function       to interact securely with other AWS services.
 
 
 ## Setup Guide

@@ -13,41 +13,42 @@ AWSAlertWizard is a serverless pipeline designed to fetch weather data from an o
 ## Prerequisites
 1. **AWS Account**: Access to AWS services like Lambda, DynamoDB, and SES.
 2. **Python**: Installed on your local machine for packaging the Lambda function.
+3. **Install Required Libraries**:
+   - Use `pip install requests -t .` to package the requests library for Lambda.
 
 
 ## Setup Guide
+
 1. **Create a DynamoDB Table**:
    - Table Name: `WeatherData`
    - Primary Key: `Date` (String)
 
-2. **Set Up AWS Lambda**:
-   - Author a Lambda function in Python (`lambda_function.py`) to fetch weather data and save it to DynamoDB.
-
-3. **Install Required Libraries**:
-   - Use `pip install requests -t .` to package the requests library for Lambda.
+3. **Set Up AWS Lambda**:
+   - Create a Lambda function in Python (`lambda_function.py`) to fetch weather data and save it to DynamoDB.
 
 4. **Set Up Email Notifications**:
    - Verify your email with Amazon SES and configure the Lambda function to send alerts.
 
 5. **Automate the Pipeline**:
-   - Use AWS CloudWatch EventBridge to schedule the Lambda function execution.
+   - Use AWS CloudWatch EventRule to schedule the Lambda function execution.
 
 ## Usage
-1. Clone the repository:
+
+**1. Clone the repository:**
    ```bash
    git clone https://github.com/your-username/AWSAlertWizard.git
    cd AWSAlertWizard
-   
-2. Package and Deploy:
 
-Create a lambda_package directory, install dependencies, and zip the files.
+**2. Package and Deploy:**
 
-Upload the zipped package to AWS Lambda.
+   Create a lambda_package directory, install dependencies(requests), and zip the files.
 
-3. Test the Setup:
+   Upload the zipped package to AWS Lambda.
 
-Trigger the Lambda function manually or let the scheduled rule execute it.
+**3. Test the Setup:**
 
-Monitor Alerts:
+   Trigger the Lambda function manually or let the scheduled rule execute it.
 
-Check your verified email for weather alert notifications.
+ **4.Monitor Alerts:**
+
+   Check your verified email for weather alert notifications.

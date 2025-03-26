@@ -36,7 +36,7 @@ AWSAlertWizard is a serverless pipeline designed to fetch weather data from an o
 
 **1. Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/AWSAlertWizard.git
+   git clone https://github.com/sowsri1218/AWSAlertWizard.git
    cd AWSAlertWizard
 
 **2. Package and Deploy:**

@@ -23,19 +23,19 @@ AWSAlertWizard is a serverless pipeline designed to fetch weather data from an o
    - Table Name: `WeatherData`
    - Primary Key: `Date` (String)
 
-3. **Set Up AWS Lambda**:
+2. **Set Up AWS Lambda**:
    - Create a Lambda function in Python (`lambda_function.py`) to fetch weather data and save it to DynamoDB.
 
-4. **Set Up Email Notifications**:
+3. **Set Up Email Notifications**:
    - Verify your email with Amazon SES and configure the Lambda function to send alerts.
 
-5. **Automate the Pipeline**:
+4. **Automate the Pipeline**:
    - Use AWS CloudWatch EventRule to schedule the Lambda function execution.
 
 ## Usage
 
 **1. Clone the repository:**
-   ```bash
+   
    git clone https://github.com/sowsri1218/AWSAlertWizard.git
    cd AWSAlertWizard
 

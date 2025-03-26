@@ -41,8 +41,8 @@ AWSAlertWizard is a serverless pipeline designed to fetch weather data from an o
 ### 4. Verify Email Address in SES
 - Go to the SES Console and verify the sender and receiver email addresses under **Verified Identities**.
 
-### 5. Automate with EventBridge
-- Create a scheduled rule in EventBridge to trigger the Lambda function daily.
+### 5. Automate with CloudWatch EventRule
+- Create a scheduled rule in CloudWatch to trigger the Lambda function at specified intervals.
   
 ## Usage
 

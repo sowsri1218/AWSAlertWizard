@@ -1,5 +1,5 @@
 # AWSAlertWizard
-# AWSAlertWizard
+
 
 AWSAlertWizard is a serverless pipeline designed to fetch weather data from an open-source API (like Open-Meteo), analyze it for bad weather conditions, and send real-time alerts to email addresses using Amazon SES. The solution also stores historical weather data in DynamoDB for future analysis.
 
